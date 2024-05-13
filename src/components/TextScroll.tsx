@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from "react";
 import style from "@/styles/Home.module.css";
 
 const TextScroll = () => {
-  const pTag1Ref = useRef(null);
-  const pTag2Ref = useRef(null);
-  const pTag3Ref = useRef(null);
-  const pTag4Ref = useRef(null);
+  const pTag1Ref = useRef<HTMLParagraphElement | null>(null);
+  const pTag3Ref = useRef<HTMLParagraphElement | null>(null);
+  const pTag4Ref = useRef<HTMLParagraphElement | null>(null);
+  const pTag2Ref = useRef<HTMLParagraphElement | null>(null);
 
   let count1 = 0;
   let count2 = 0;
@@ -18,14 +18,21 @@ const TextScroll = () => {
     const pTag3 = pTag3Ref.current;
     const pTag4 = pTag4Ref.current;
 
-    function marqueeText(count, element, direction) {
-      if (count > element.scrollWidth / 2) {
-        element.style.transform = `translate3d(0, 0, 0)`;
-        count = 0;
-      }
-      element.style.transform = `translate3d(${direction * count}px, 0, 0)`;
+    function marqueeText(
+      count: number,
+      element: HTMLParagraphElement | null,
+      direction: number
+    ) {
+      if (element) {
+        if (count > element.scrollWidth / 2) {
+          element.style.transform = `translate3d(0, 0, 0)`;
+          count = 0;
+        }
+        element.style.transform = `translate3d(${direction * count}px, 0, 0)`;
 
-      return count;
+        return count;
+      }
+      return 0;
     }
 
     function animate() {
@@ -68,7 +75,7 @@ const TextScroll = () => {
       </div>
       <div className={style.cover}>
         <p className={style.p} ref={pTag3Ref}>
-          Let's Dive Into This Tutorial Take It Easy! Don't Worry
+          Let&apos;s Dive Into This Tutorial Take It Easy! Don&apos;t Worry
         </p>
       </div>
       <div className={style.cover}>

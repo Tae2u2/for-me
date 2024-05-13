@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'RIDIBatang';
+  src: url("./font/RIDIBatang.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*This Font Software is licensed under the SIL Open Font License, Version 1.1.
+리디바탕의 저작권은 리디주식회사가 소유하고 있습니다.*/
+
+@font-face {
+  font-family: 'Pretendard Variable';
+  src: url('./font/PretendardVariable.woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard Variable';
+  src: url('./font/PretendardVariable.woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard Variable';
+  src: url('./font/PretendardVariable.woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard Variable';
+  src: url('./font/PretendardVariable.woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard Variable';
+  src: url('./font/PretendardVariable.woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard Variable';
+  src: url('./font/PretendardVariable.woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-Core Dream';
+  src: url('./font/SCDream5.otf');
+  font-weight: 500;
+  font-style: normal;
+}
