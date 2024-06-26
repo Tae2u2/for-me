@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Pretendard Basic';
+    src: url('../../styles/font/PretendardVariable.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard Bold';
+  src: url('../../styles/font/PretendardVariable.woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.container{
+    width: 100%;
+    max-width: 1900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Pretendard Basic';
+}
+.grid_wrapper{
+    width: 100%;
+    max-width: 1900px;
+    display: grid;
+    flex-wrap: wrap;
+    gap: 3px;
+    grid-template-columns: repeat(7, 14%);
+}
+.grid_wrapper > img {
+    box-shadow: -1px -1px 1px #bdbdbd , 1px 1px 1px #bdbdbd;
+}
+.products{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 14px;
+    filter: grayscale(100%);
+}
+.products:nth-of-type(6){
+    margin-top: 50%;
+    width: 50%;
+    height: auto;
+}
+.products:nth-of-type(8){
+    width: 50%;
+    height: auto;
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+.header > h4 {
+    padding: 24px 36px;
+    font-size: 1.3rem;
+}
+
+.header > ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.header > ul > li > a{
+    display: flex;
+    align-items: center;
+    padding: 24px 36px;
+    font-weight: 500;
+    transition: color 0.25s;
+}
+.header > ul > li > a::before{
+    content: "";
+    display: block;
+    box-shadow: inset 0 0 0 2px #000;
+    border-radius: 100%;
+    width: 0.75em;
+    height: 0.75em;
+    margin-right: 10px;
+    transition: box-shadow 0.25s;
+}
+.header > ul > li > a:hover{
+    color: #4e2fc1;
+}
+.header > ul > li > a:hover::before{
+    color: #4e2fc1;
+    box-shadow: inset 4px 4px 4px 2px #4e2fc1, inset -4px -4px 2px #4e2fc1;
+}
+
+.text_wrapper{
+    width: 100%;
+    padding: 240px 3%;
+}
+
+.text_box > p {
+    font-size: 2rem;
+    letter-spacing: -0.28px;
+    font-family: 'Pretendard Bold';
+}
+.text_box > h1{
+    font-size: 4rem;
+    letter-spacing: -0.28px;
+    font-family: 'Pretendard Bold';
+}
+.show{
+    animation: fadeIn linear 1 1s;
+}
+@keyframes fadeIn {
+    0%{opacity: 0; }
+    100%{opacity: 1; }
+}
