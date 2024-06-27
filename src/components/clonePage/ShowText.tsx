@@ -2,7 +2,7 @@
 
 import { useIntersection } from "@/hooks/useIntersection";
 import { useRef } from "react";
-import style from "./GridImage.module.css";
+import style from "./ClonePage.module.css";
 
 const ShowText = () => {
   const targetRef = useRef(null);

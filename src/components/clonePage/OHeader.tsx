@@ -1,5 +1,5 @@
 import Link from "next/link";
-import style from "./GridImage.module.css";
+import style from "./ClonePage.module.css";
 
 const OHeader = () => {
   return (
@@ -7,7 +7,7 @@ const OHeader = () => {
       <h4>PLANT147</h4>
       <ul>
         <li>
-          <Link href={"/planit147"}>ABOUT</Link>
+          <Link href={"/planit147/about"}>ABOUT</Link>
         </li>
         <li>
           <Link href={"/planit147"}>WORKS</Link>
