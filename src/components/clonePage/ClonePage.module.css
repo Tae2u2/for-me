@@ -140,11 +140,12 @@
 }
 .show{
     opacity: 0;
-    animation: fadeIn linear 1 1.5s forwards;
+    transform: translateY(80px);
+    animation: fadeIn linear 1 3s forwards;
 }
 @keyframes fadeIn {
-    0%{opacity: 0; }
-    100%{opacity: 1; }
+    0%{opacity: 0; transform: translateY(80px); }
+    100%{opacity: 1; transform: translateY(0);}
 }
 
 .banner_list{

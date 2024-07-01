@@ -6,7 +6,7 @@ import style from "./ClonePage.module.css";
 
 const ShowText = () => {
   const targetRef = useRef(null);
-  const { isVisible } = useIntersection(targetRef);
+  const { isVisible } = useIntersection(targetRef, 0.4);
   return (
     <div className={style.text_wrapper}>
       <div

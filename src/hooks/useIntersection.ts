@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 
-export const useIntersection = (targetRef:React.MutableRefObject<Element | null>) => {
+export const useIntersection = (targetRef:React.MutableRefObject<Element | null>, threshold:number) => {
     const [isVisible, setIsVisible] = useState(false);
   
     const callbackFn: IntersectionObserverCallback = (entries) => {
@@ -12,7 +12,7 @@ export const useIntersection = (targetRef:React.MutableRefObject<Element | null>
       return {
         root: null,
         rootMargin: '0px',
-        threshold: 0.4,
+        threshold,
       };
     }, []);
   

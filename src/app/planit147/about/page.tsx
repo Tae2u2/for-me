@@ -1,5 +1,11 @@
+import CircleObject from "@/components/clonePage/about/CircleObject";
+
 const AboutPage = () => {
-  return <div>page</div>;
+  return (
+    <div>
+      <CircleObject />
+    </div>
+  );
 };
 
 export default AboutPage;
