@@ -1,1 +1,1 @@
-잡동사니
+[잡동사니](https://for-me-nine.vercel.app/charts)
